@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Menu from './components/menu'
 import Categories from './components/Categories';
 import items from './components/Data'
 import itemsAdapt from './components/DataAdapt'
@@ -28,8 +26,7 @@ function App() {
   const [menuItems, setMenuItems] = useState(items);
   const [adaptItems, setadaptItems] = useState(itemsAdapt);
   const [categories, setCategories] = useState(allCategories);
-  const [isLoggedIn, setLoggedIn] = useState(false);
-  const [username, setUsername] = useState('');
+
   // Define the filterItems function
   const filterItems = (category) => {
     if (category === 'Show All') {
