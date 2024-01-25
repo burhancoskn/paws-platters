@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose, AiFillTag } from 'react-icons/ai'
 import { BsCartFill, BsFillCartFill, BsPerson } from 'react-icons/bs'
 import { TbTruckReturn } from 'react-icons/tb'
-import { FaUserFriends, FaGoogleWallet, FaSignInAlt, FaSignOutAlt, FaCat } from 'react-icons/fa'
+import { FaUserFriends, FaGoogleWallet, FaSignInAlt, FaShoppingBasket , FaCat } from 'react-icons/fa'
 import { MdHelp, MdOutlineFavorite } from 'react-icons/md'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Modal from 'react-bootstrap/Modal';
@@ -31,18 +31,15 @@ const TopNav = () => {
                 <div className='hidden lg:flex items-center  rounded-full  text-[11px]'>
                     <nav>
                         <ul className='flex flex-row my-0 text-gray-900'>
-                            <li className='text-xl  custom-Text-Color flex'>
-                                <a href="/" class="text-neutral-600 hover:text-neutral-800 ">
-                                    Home</a>
-                            </li>  <li className='text-xl px-2 custom-Text-Color flex'>
+                             <li className='text-xl px-2 custom-Text-Color flex'>
                                 <a href="/shop" class="text-neutral-600 hover:text-neutral-800 ">
                                     Shop</a>
                             </li>  <li className='text-xl px-2 custom-Text-Color flex'>
                                 <a href="/adopt" class="text-neutral-600 hover:text-neutral-800 ">
                                     Adoption</a>
                             </li>  <li className='text-xl px-2 custom-Text-Color flex'>
-                                <a href="/news" class="text-neutral-600 hover:text-neutral-800 ">
-                                    News</a>
+                                <a href="/faq" class="text-neutral-600 hover:text-neutral-800 ">
+                                    FAQ</a>
                             </li>
 
                         </ul>
@@ -122,10 +119,16 @@ const TopNav = () => {
                             My Account</a>
                         </li>  <li className='text-xl py-4 flex'>
                             <FaCat size={25} className='mr-4 custom-Nav-Color  rounded-none' />
-                            <a href="/adapt2" class="text-neutral-600 hover:text-neutral-800 no-underline">
+                            <a href="/adopt" class="text-neutral-600 hover:text-neutral-800 no-underline">
 
                             Adapt a Pet</a>
-                        </li>  <li className='text-xl py-4 flex'>
+                        </li> <li className='text-xl py-4 flex'>
+                            <FaShoppingBasket  size={25} className='mr-4 custom-Nav-Color  rounded-none' />
+                            <a href="/shop" class="text-neutral-600 hover:text-neutral-800 no-underline">
+
+                            Shop
+                            </a>
+                        </li> <li className='text-xl py-4 flex'>
                             <MdOutlineFavorite size={25} className='mr-4 custom-Nav-Color  rounded-none' />
                             <a href="/fav" class="text-neutral-600 hover:text-neutral-800 no-underline">
 
@@ -136,14 +139,11 @@ const TopNav = () => {
 
                             My Orders</a>
                         </li>
-                        <li className='text-xl py-4 flex'>
+                         <li className='text-xl py-4 flex'>
                             <FaUserFriends size={25} className='mr-4 custom-Nav-Color  rounded-none' />
-                            Share
-                        </li> <li className='text-xl py-4 flex'>
-                            <MdHelp size={25} className='mr-4 custom-Nav-Color  rounded-none' />
-                            <a href="/help" class="text-neutral-600 hover:text-neutral-800 no-underline">
+                            <a href="#" class="text-neutral-600 hover:text-neutral-800 no-underline">
 
-                            Help        </a>                </li>
+                            Share        </a>                </li>
                     </ul>
                 </nav>
             </div>

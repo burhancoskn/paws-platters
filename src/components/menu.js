@@ -88,7 +88,7 @@ const Menu = ({ selectedCategory }) => {
                                         </div>
                                     ) : (
                                         <div className='text-gray-700 mb-2'>
-                                            <span className='bg-orange-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full'>
+                                            <span className='bg-orange-500 text-white text-xs font-medium mr-1 px-2 py-0.5 rounded-full'>
                                                 No gift available. Follow us for updates!</span>
                                         </div>
                                     )}

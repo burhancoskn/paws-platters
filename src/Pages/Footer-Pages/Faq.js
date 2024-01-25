@@ -2,142 +2,86 @@ import React from 'react'
 
 const Faq = () => {
   return (
-    <div><section class="flex items-center">
-      <div class="justify-center flex-1 max-w-6xl px-4 py-4 mx-auto lg:py-6 md:px-6">
-        <h2 class="pb-2 text-3xl font-bold text-center ">
-          Frequently Asked Questions
-        </h2>
-        <div class="mx-auto border-b border-red-700 mb-14 w-44 dark:border-gray-400"></div>
-        <div class="flex flex-wrap items-center justify-between max-w-2xl mb-12 lg:max-w-full">
-          <div class="w-full mb-6 lg:w-1/2 lg:mb-0">
-            <h2 class="text-3xl font-bold md:text-4xl ">
-              <span>We are always here for your backup</span>
-            </h2>
-            <p class="text-lg pt-7 dark:text-gray-500">We share common trends and strategies for improving your
-              rental income
-            </p>
-            <div class="pt-11">
-              <div class="flex gap-4">
-                <div class="flex items-center justify-center p-3 custom-Color rounded-full w-11 h-11">
-                  <span class="text-center text-white">1</span>
-                </div>
-                <div class="">
-                  <h2 class="mb-4 text-xl font-semibold ">
-                    Noise free locations</h2>
-                  <p class="text-base ">We share common trends and
-                    strategies for
-                    improving your rental income</p>
-                </div>
-              </div>
-              <div class="flex gap-4 mt-7">
-                <div class="flex items-center justify-center p-3 custom-Color rounded-full  w-11 h-11">
-                  <span class="text-center text-white">2</span>
-                </div>
-                <div class="">
-                  <h2 class="mb-4 text-xl font-semibold ">
-                    24/7 hour services</h2>
-                  <p class="text-base">We share common trends and
-                    strategies for
-                    improving your rental income</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full lg:w-1/2 lg:pl-11 lg:mb-0">
-            <div class="w-full h-1 mb-6 custom-Color rounded-full "></div>
-            <div class="mx-3 w-fit md:mx-auto ">
-              <button class="w-full pb-2 mb-2 text-left ">
-                <div class="bg-white ">
-                  <div class="flex items-center p-3 mb-1 text-black custom-Color border cursor-pointer  ">
-                    <div class="w-11/12 heading">
-                      <h4 class="text-lg text-white"> What is your website name?</h4>
-                    </div>
-                    <span class="text-right rotate-180 ">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
-                      </svg>
-                    </span>
-                  </div>
-                  <div class="p-3 text-sm  ">
-                    <p>Although a definitive answer would of course require further measurements,
-                      published
-                      species-wide averages of wing length and body mass, initial Strouhal
-                      estimates
-                      .</p>
-                  </div>
-                </div>
-              </button>
-              <button class="w-full pb-2 mb-2 text-left ">
-                <div class="bg-gray-100 border">
-                  <div class="flex items-center p-3 mb-1 text-white custom-Color cursor-pointer ">
-                    <div class="w-11/12 heading">
-                      <h4 class="text-lg text-white"> What are the main benefits of website?
-                      </h4>
-                    </div>
-                    <span class="text-right ">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
-                      </svg>
-                    </span>
-                  </div>
-                  <div class="hidden mt-3  ">
-                    <p>Although a definitive answer would of course require further measurements,
-                      published
-                      species-wide averages of wing length and body mass, initial Strouhal
-                      estimates
-                      .</p>
-                  </div>
-                </div>
-              </button>
-              <button class="w-full pb-2 mb-2 text-left ">
-                <div class="bg-gray-100 border ">
-                  <div class="flex items-center p-3 mb-1 text-white cursor-pointer custom-Color  questions active">
-                    <div class="w-11/12 heading">
-                      <h4 class="text-lg"> How much your website cost?
-                      </h4>
-                    </div>
-                    <span class="text-right  ">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
-                      </svg>
-                    </span>
-                  </div>
-                  <div class="hidden mt-3 text-gray-700 ">
-                    <p>Although a definitive answer would of course require further measurements,
-                      published
-                      species-wide averages of wing length and body mass, initial Strouhal
-                      estimates
-                      .</p>
-                  </div>
-                </div>
-              </button>
-              <button class="w-full pb-2 mb-2 text-left ">
-                <div class="bg-gray-100 border ">
-                  <div class="flex items-center p-3 mb-1 text-white custom-Color cursor-pointer  ">
-                    <div class="w-11/12 heading">
-                      <h4 class="text-lg "> What kind of business do you work with?
-                      </h4>
-                    </div>
-                    <span class="text-right  ">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
-                      </svg>
-                    </span>
-                  </div>
-                  <div class="hidden mt-3 ">
-                    <p>Although a definitive answer would of course require further measurements,
-                      published
-                      species-wide averages of wing length and body mass, initial Strouhal
-                      estimates
-                      .</p>
-                  </div>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section></div>
+    <section class="bg-white ">
+  <ul class="max-w-2xl mx-auto mt-20 divide-y  shadow shadow-blue-600 rounded-xl">
+    <li>
+        <details class="group">
+            <summary class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+                <span>What is "Paws & Platters"?
+</span>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <p>"Paws & Platters" is your one-stop destination for high-quality pet food and adoption services. We offer a wide range of cat, dog, and other pet foods to cater to the nutritional needs of your furry friends.
+                   Additionally, we provide a platform for pet adoption, connecting loving families with adorable pets in need of a home.
+                </p>
+            </article>
+        </details>
+    </li>
+    <li>
+        <details class="group">
+            <summary class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+                <span>Can I use pet food and adoption services for multiple projects?</span>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <p>
+                Absolutely! "Paws & Platters" products, including our design and code packages, can be utilized for an unlimited number of projects.
+                 Whether it's for personal use, a SaaS application, or a client's website, as long as your project doesn't directly compete with "Paws & Platters," you're good to go. </p>
+            </article>
+        </details>
+    </li>
+    <li>
+        <details class="group">
+            <summary class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+                <span>How does support work?</span>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <p>
+                Our dedicated support team consists of the very individuals who worked on the "Paws & Platters" project. Feel free to reach out with any questions or concerns, and we'll provide assistance promptly. </p>
+            </article>
+        </details>
+    </li>
+    <li>
+        <details class="group">
+            <summary class="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+                <span>What does "lifetime access" exactly mean?</span>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <p>
+                When you purchase from "Paws & Platters," the term "lifetime access" ensures that you have ongoing access to all future updates and improvements we make to our products. This includes design, code, and any other features outlined in our roadmap, without any additional charges. </p>
+            </article>
+        </details>
+    </li>
+
+</ul>
+</section>
   )
 }
 

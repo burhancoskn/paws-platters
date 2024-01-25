@@ -1,6 +1,6 @@
 {
-  "name": "Paws & Platters",
-  "version": "0.2.0",
+  "name": "Pet-Food",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
