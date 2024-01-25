@@ -22,7 +22,7 @@ const Login = () => {
               <div class="text-center">
                 <img
                   class="mx-auto w-48"
-                  src="./logo512.png"
+                  src="../logo512.png"
                   alt="logo" />
 
               </div>
@@ -124,7 +124,7 @@ const Login = () => {
                 <div class="text-center">
                   <img
                     class="mx-auto w-48"
-                    src="./logo512.png"
+                    src="../logo512.png"
                     alt="logo" />
 
                 </div>
