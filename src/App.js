@@ -7,7 +7,6 @@ import itemsAdapt from './components/DataAdapt'
 import { useState } from 'react';
 import Footer from './components/Footer';
 import TopNav from './components/TopNav';
-import Adapt from './Pages/Sidebar-Pages/Adapt';
 import Login from './Pages/Login';
 import Home from './Pages/Home';
 
@@ -37,19 +36,21 @@ function App() {
     }
   };
 
+  const [cartItems, setCartItems] = useState([]);
 
+  const addToCart = (item) => {
+    setCartItems([...cartItems, item]);
+  };
   return (
     <Router>
       <div className="Container">
-      <TopNav  />
+        <TopNav />
         <div className='Content'>
           <Switch>
             <Route exact path='/'>
               <Home />
             </Route>
-            <Route path='/adapt'>
-              <Adapt />
-            </Route>
+
             <Route path='/login'>
 
               <Login />
@@ -64,10 +65,10 @@ function App() {
 
               <Aboutus />
 
-            </Route><Route path='/cart'>
-
-              <Cart />
-
+            </Route>
+            
+            <Route path="/cart">
+              <Cart cartItems={cartItems} />
             </Route>
             <Route path='/faq'>
 
@@ -83,7 +84,7 @@ function App() {
               <Categories filterItems={filterItems} categories={categories} />
             </Route>
 
-            <Route path='/adapt2'>
+            <Route path='/adopt'>
 
               <CategoriesAdapt items={adaptItems} />
 

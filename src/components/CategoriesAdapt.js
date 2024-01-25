@@ -1,17 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
+
 import { BsCheck, BsX, BsPinMap } from 'react-icons/bs'
 import { FaShieldCat, FaShieldDog, FaPaw } from 'react-icons/fa6'
 const CategoriesAdapt = () => {
     const [items, setItems] = useState([]); // Use setItems to update the state
     const [selectedCategory, setSelectedCategory] = useState(null);
+   const apiUrl= process.env.REACT_APP_API_URL;
+  
 
     // Use the selectedCategory when fetching data
     useEffect(() => {
         const fetchDataFromAPI = async () => {
             try {
                 // Use the selectedCategory to conditionally construct the URL
-                const url = selectedCategory ? `http://localhost:3000/adapt/types/${selectedCategory}` : 'http://localhost:3000/adapt/';
+              
+                const url = selectedCategory ? `${apiUrl}/adapt/types/${selectedCategory}` :`${apiUrl}/adapt`;
 
                 const response = await Axios.get(url);
                 const data = response.data;
@@ -124,7 +128,7 @@ const CategoriesAdapt = () => {
 
 
             <main className='container'>
-                <h2 className='pb-2 text-xl font-bold text-left'>Adapt a Friend</h2>
+                <h2 className='pb-2 text-xl font-bold text-left'>Adopt a Friend</h2>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 py-4'>
                     {
                         items.map((item) => {

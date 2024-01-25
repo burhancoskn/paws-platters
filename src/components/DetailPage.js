@@ -50,10 +50,9 @@ const DetailPage = ({ items }) => {
                                 </div>
                             </div>
                             <div class="flex">
-                            <span class="  pl-2 text-price text-2xl font-medium me-2 px-2.5 py-0.5 rounded  dark:text-yellow-400 border border-yellow-300 ">€ {price} </span>
-
-                                
-                            <button class="flex  ml-auto text-white custom-Color border-0 py-2 px-6 focus:outline-none border-yellow-600 rounded">Add Cart</button>
+                            <span class="  pl-2 text-price text-2xl font-medium me-2 px-2.5 py-0.5 rounded  dark:text-yellow-400 border border-yellow-300 ">€ {price} </span>  
+                            <button 
+                            class="flex  ml-auto text-white custom-Color border-0 py-2 px-6 focus:outline-none border-yellow-600 rounded">Add Cart</button>
 
                                 <button class="rounded-full w-10 h-10 bg-gray-200 p-0 border inline-flex items-center text-center justify-center custom-Text-Color ml-4">
                                     <MdOutlineFavorite size={25} className=' custom-Nav-Color  rounded-none' />

@@ -38,8 +38,8 @@ const TopNav = () => {
                                 <a href="/shop" class="text-neutral-600 hover:text-neutral-800 ">
                                     Shop</a>
                             </li>  <li className='text-xl px-2 custom-Text-Color flex'>
-                                <a href="/adapt2" class="text-neutral-600 hover:text-neutral-800 ">
-                                    Adaption</a>
+                                <a href="/adopt" class="text-neutral-600 hover:text-neutral-800 ">
+                                    Adoption</a>
                             </li>  <li className='text-xl px-2 custom-Text-Color flex'>
                                 <a href="/news" class="text-neutral-600 hover:text-neutral-800 ">
                                     News</a>

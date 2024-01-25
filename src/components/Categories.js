@@ -9,11 +9,12 @@ const Categories = () => {
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');
   const [menuItems, setMenuItems] = useState([]);
+  const apiUrl= process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await Axios.get('http://localhost:3000/shop/categories');
+        const response = await Axios.get(`${apiUrl}/shop/categories`);
         const categoriesData = response.data;
   
         // Add a "Show All" category to the list
@@ -30,7 +31,7 @@ const Categories = () => {
   useEffect(() => {
     const fetchAllProducts = async () => {
       try {
-        const response = await Axios.get('http://localhost:3000/shop/');
+        const response = await Axios.get(`${apiUrl}/shop/`);
         setMenuItems(response.data);
       } catch (error) {
         console.error('Error fetching all products:', error);
@@ -47,10 +48,10 @@ const Categories = () => {
     try {
       let url;
       if (categoryName === 'Show All') {
-        url = 'http://localhost:3000/shop/';
+        url = `${apiUrl}/shop/`;
       } else {
         const encodedCategoryName = encodeURIComponent(categoryName);
-        url = `http://localhost:3000/shop/category/${encodedCategoryName}`;
+        url = `${apiUrl}/shop/category/${encodedCategoryName}`;
       }
   
       console.log('Request URL:', url);
