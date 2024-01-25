@@ -3,13 +3,14 @@ import Axios from 'axios';
 import { Link } from 'react-router-dom';
 const Menu = ({ selectedCategory }) => {
     const [items, setItems] = useState([]); // Use setItems to update the state
+    const apiUrl= process.env.REACT_APP_API_URL;
 
     // Use the selectedCategory when fetching data
     useEffect(() => {
         const fetchDataFromAPI = async () => {
             try {
               // Use the selectedCategory to conditionally construct the URL
-              const url = selectedCategory ? `http://localhost:3000/shop/category/${selectedCategory}` : 'http://localhost:3000/shop/';
+              const url = selectedCategory ? `${apiUrl}/shop/category/${selectedCategory}` : `${apiUrl}/shop/`;
           
               const response = await Axios.get(url);
               const data = response.data;
