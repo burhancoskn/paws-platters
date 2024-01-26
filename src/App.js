@@ -7,6 +7,7 @@ import itemsAdapt from './components/DataAdapt'
 import { useState } from 'react';
 import Footer from './components/Footer';
 import TopNav from './components/TopNav';
+import AddProduct from './components/AddProductForm';
 import Login from './Pages/Login';
 import Home from './Pages/Home';
 
@@ -66,13 +67,18 @@ function App() {
               <Aboutus />
 
             </Route>
-            
+
             <Route path="/cart">
               <Cart cartItems={cartItems} />
             </Route>
             <Route path='/faq'>
 
               <Faq />
+
+            </Route>
+             <Route path='/addproduct'>
+
+              <AddProduct />
 
             </Route>
             <Route path='/fav'>

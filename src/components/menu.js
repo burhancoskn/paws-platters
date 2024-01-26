@@ -3,26 +3,26 @@ import Axios from 'axios';
 import { Link } from 'react-router-dom';
 const Menu = ({ selectedCategory }) => {
     const [items, setItems] = useState([]); // Use setItems to update the state
-    const apiUrl= process.env.REACT_APP_API_URL;
+    const apiUrl = process.env.REACT_APP_API_URL;
 
     // Use the selectedCategory when fetching data
     useEffect(() => {
         const fetchDataFromAPI = async () => {
             try {
-              // Use the selectedCategory to conditionally construct the URL
-              const url = selectedCategory ? `${apiUrl}/shop/category/${selectedCategory}` : `${apiUrl}/shop/`;
-          
-              const response = await Axios.get(url);
-              const data = response.data;
-              setItems(data);
-          } catch (error) {
-            console.error('Error fetching data:', error);
-          }
+                // Use the selectedCategory to conditionally construct the URL
+                const url = selectedCategory ? `${apiUrl}/shop/category/${selectedCategory}` : `${apiUrl}/shop/`;
+
+                const response = await Axios.get(url);
+                const data = response.data;
+                setItems(data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
         };
-    
+
         // Fetch data when the component mounts or when selectedCategory changes
         fetchDataFromAPI();
-      }, [selectedCategory]);
+    }, [selectedCategory]);
     return (
         <main className='container mx-auto'>
             <h2 className='pb-2 text-xl font-bold text-left'>Products</h2>
@@ -55,8 +55,8 @@ const Menu = ({ selectedCategory }) => {
                                 <div className='relative overflow-hidden mb-5'>
                                     <img
                                         className='object-cover w-full mx-auto transition-all rounded h-72 group-hover:scale-110'
-                                        src={img}
-                                        alt=''
+                                        src={img || './images/web-logo.png'}
+                                        alt={title}
                                     />
                                     {newProduct === true && (
                                         <span className="absolute bottom-0 left-0 px-4 py-2 lg:px-2 lg:py-1 text-sm font-bold border-2 rounded-md custom-Color text-white">
@@ -88,7 +88,7 @@ const Menu = ({ selectedCategory }) => {
                                         </div>
                                     ) : (
                                         <div className='text-gray-700 mb-2'>
-                                            <span className='bg-orange-500 text-white text-xs font-medium mr-1 px-2 py-0.5 rounded-full'>
+                                            <span className='bg-orange-500 text-white text-xs mr-1 px-2 py-0.5 rounded-full'>
                                                 No gift available. Follow us for updates!</span>
                                         </div>
                                     )}

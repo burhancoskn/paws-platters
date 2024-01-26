@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 
 import { BsCheck, BsX, BsPinMap } from 'react-icons/bs'
-import { FaShieldCat, FaShieldDog, FaPaw } from 'react-icons/fa6'
+import { FaShieldCat, FaShieldDog, FaPaw ,FaShieldHeart } from 'react-icons/fa6'
 const CategoriesAdapt = () => {
     const [items, setItems] = useState([]); // Use setItems to update the state
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -48,21 +48,21 @@ const CategoriesAdapt = () => {
                         </h1>
                     </div>
                     <div className='container mb-16'>
-                        <div class="grid grid-cols-1 gap-1 sm:grid-cols-7  ">
+                        <div class="grid  gap-1 sm:grid-cols-7 mt-6 ">
 
                             <div >
                             </div>
                             <div >
                             </div>
-                            <div class="p-4 sm:p-10 text-center cursor-pointer">
+                            <div class="p-2  text-center cursor-pointer">
                                 <div class="py-1 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500  bg-white">
                                     <div
                                         onClick={() => handleCategoryClick('all')}
                                         class="flex flex-col justify-center items-center">
-                                        <i class="fa fa-head-side-mask"></i>
+                                        <FaShieldHeart  size={64} className='custom-Nav-Color'/>
                                         <div class="p-2">
                                             <span
-                                                className={`custom-Nav-Color cursor-pointer ${selectedCategory === 'all' ? 'font-bold' : ''}`}
+                                                className={`font-bold text-xl ${selectedCategory === 'all' ? 'font-bold' : ''}`}
                                             >
                                                 Show All
                                             </span>
@@ -70,7 +70,7 @@ const CategoriesAdapt = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-4 sm:p-10 text-center cursor-pointer">
+                            <div class="p-2  text-center cursor-pointer">
                                 <div
                                     onClick={() => handleCategoryClick('cat')}
                                     class="py-1 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500  bg-white">
@@ -87,7 +87,7 @@ const CategoriesAdapt = () => {
                                 </div>
                             </div>
 
-                            <div class="p-4 sm:p-10 text-center cursor-pointer ">
+                            <div class="p-2 text-center cursor-pointer ">
                                 <div class=" max-w-sm rounded overflow-hidden shadow-lg bg-white transition duration-500">
                                     <div
                                         onClick={() => handleCategoryClick('dog')} class="flex flex-col justify-center items-center">
@@ -103,7 +103,7 @@ const CategoriesAdapt = () => {
                                 </div>
                             </div>
 
-                            <div class="p-4 sm:p-10 text-center cursor-pointer ">
+                            <div class="p-2 text-center cursor-pointer ">
                                 <div class=" max-w-sm rounded overflow-hidden shadow-lg bg-white transition duration-500">
                                     <div
                                         onClick={() => handleCategoryClick('others')}
