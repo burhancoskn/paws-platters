@@ -8,7 +8,7 @@ const menu = [
         newProduct: 'true',
         category: 'Wet Cat Food',
         brand: 'Animonda',
-        categoryImg: './images/category/wet-Cat.jpg',
+        categoryImg: './images/category/wet-cat.jpg',
         price: '23.89',
         img: './images/Product/1.jpg', //    Foood Pictures
         desc: 'da Katzen durch sie nicht alle lebenswichtigen Nährstoffe erhalten und aufnehmen können. Außerdem ist insbesondere Getreide ein häufiger Auslöser von Futtermittelunverträglichkeiten und kann oft nur schwer verdaut werden. Aus diesem Grund wird bei der Rezeptur von Animonda Carny Adult vollständig auf die Zugabe von Getreide verzichtet. Auch Soja, welches ebenfalls ein hohes allergenes Potential aufweist, ist nicht enthalten.'
@@ -22,7 +22,7 @@ const menu = [
         newProduct: 'false',
         category: 'Wet Cat Food',
         brand: 'Animonda',
-        categoryImg: './images/category/wet-Cat.jpg',
+        categoryImg: './images/category/wet-cat.jpg',
         price: '23.49',
         img: './images/Product/2.jpg', //    Foood Pictures
         desc: 'ist das Ergänzungsfutter Animonda Carny Adult Duo eine hervorragende Wahl. Es handelt sich um Nassfutter in zwei Schichten mit Thunfisch und/oder Huhn als Hauptzutaten. Sie haben die Wahl aus mehreren Geschmacksrichtungen in Gelee, Mousse oder mit Crumble, die dank ihrer köstlichen Rezepturen auch anspruchsvolle Gourmets auf Samtpfoten zufrieden stellen.'
@@ -36,7 +36,7 @@ const menu = [
         newProduct: 'true',
         category: 'Wet Cat Food',
         brand: 'Animonda',
-        categoryImg: './images/category/wet-Cat.jpg',
+        categoryImg: './images/category/wet-cat.jpg',
         price: '5.99',
         img: './images/Product/3.jpg', //    Foood Pictures
         desc: 'Katzen sind Fleischliebhaber, denn es entspricht ihrer natürlichen Ernährung. Pflanzliche Bestandteile alleine sind für eine artgerechte und natürliche Ernährung ungeeignet, da Katzen durch sie nicht alle lebenswichtigen Nährstoffe erhalten und aufnehmen können. Außerdem ist insbesondere Getreide ein häufiger Auslöser von Futtermittelunverträglichkeiten und kann oft nur schwer verdaut werden. Aus diesem Grund wird bei der Rezeptur von Animonda Carny Adult vollständig auf die Zugabe von Getreide verzichtet.'
