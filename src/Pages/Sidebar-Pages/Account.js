@@ -54,27 +54,27 @@ const Account = () => {
             <ul class="mt-2 text-gray-700">
               <li class="flex py-2 items-center place-items-center">
                 <label class="font-bold w-24">Petname:</label>
-                <input className="text-gray-700 bg-transparent p-2 w-full focus:outline-none" value={"Burhan Coskun"}/>
+                <input className="text-gray-700 bg-transparent p-2 w-full focus:outline-none" value={"..."}/>
               </li>
               <li class="flex border-b py-2 items-center place-items-center">
                 <label class="font-bold w-24">Pet Gender:</label>
-                <input className="text-gray-700 bg-transparent p-2 w-full focus:outline-none" value={"Burhan Coskun"}/>
+                <input className="text-gray-700 bg-transparent p-2 w-full focus:outline-none" value={"..."}/>
               </li>
               <li class="flex border-b py-2 items-center place-items-center">
                 <label class="font-bold w-24">Birthday:</label>
-                <input className="text-gray-700 bg-transparent p-2 w-full focus:outline-none" value={"Burhan Coskun"}/>
+                <input className="text-gray-700 bg-transparent p-2 w-full focus:outline-none" value={"..."}/>
               </li>
               <li class="flex border-b py-2 items-center place-items-center">
                 <label class="font-bold w-24"> Vaccinated</label>
-                <input className="text-gray-700 bg-transparent p-2 w-full focus:outline-none" value={"Burhan Coskun"}/>
+                <input className="text-gray-700 bg-transparent p-2 w-full focus:outline-none" value={"..."}/>
               </li>
               <li class="flex border-b py-2 items-center place-items-center">
                 <label class="font-bold w-24"> castrated</label>
-                <input className="text-gray-700 bg-transparent p-2 w-full focus:outline-none" value={"Burhan Coskun"}/>
+                <input className="text-gray-700 bg-transparent p-2 w-full focus:outline-none" value={"..."}/>
               </li>
               <li class="flex border-b py-2 items-center place-items-center">
                 <label class="font-bold w-24"> Fav Food</label>
-                <input className="text-gray-700 bg-transparent p-2 w-full focus:outline-none" value={"Burhan Coskun"}/>
+                <input className="text-gray-700 bg-transparent p-2 w-full focus:outline-none" value={"..."}/>
               </li>
               </ul>
 
@@ -91,7 +91,7 @@ const Account = () => {
 
           <div class="flex items-center w-full my-6 -ml-1.5">
             <div class="w-1/12 z-10">
-              <div class="w-3.5 h-3.5 bg-blue-600 rounded-full"></div>
+              <div class="w-3.5 h-3.5 custom-Color rounded-full"></div>
             </div>
             <div class="w-11/12">
               <p class="text-sm">Profile informations changed.</p>
@@ -101,53 +101,53 @@ const Account = () => {
 
           <div class="flex items-center w-full my-6 -ml-1.5">
             <div class="w-1/12 z-10">
-              <div class="w-3.5 h-3.5 bg-blue-600 rounded-full"></div>
+              <div class="w-3.5 h-3.5 custom-Color rounded-full"></div>
             </div>
             <div class="w-11/12">
               <p class="text-sm">
-                Connected with <a href="#" class="text-blue-600 font-bold">Colby Covington</a>.</p>
+                Buyed Animonda <a href="#" class="custom-Text-Color font-bold">24 x 200 g Carny Adult</a>.</p>
               <p class="text-xs text-gray-500">15 min ago</p>
             </div>
           </div>
 
           <div class="flex items-center w-full my-6 -ml-1.5">
             <div class="w-1/12 z-10">
-              <div class="w-3.5 h-3.5 bg-blue-600 rounded-full"></div>
+              <div class="w-3.5 h-3.5 custom-Color rounded-full"></div>
             </div>
             <div class="w-11/12">
-              <p class="text-sm">Invoice <a href="#" class="text-blue-600 font-bold">#4563</a> was created.</p>
+              <p class="text-sm">Invoice <a href="#" class="custom-Text-Color font-bold">#4563</a> was created.</p>
               <p class="text-xs text-gray-500">57 min ago</p>
             </div>
           </div>
 
           <div class="flex items-center w-full my-6 -ml-1.5">
             <div class="w-1/12 z-10">
-              <div class="w-3.5 h-3.5 bg-blue-600 rounded-full"></div>
+              <div class="w-3.5 h-3.5 custom-Color rounded-full"></div>
             </div>
             <div class="w-11/12">
               <p class="text-sm">
-                Message received from <a href="#" class="text-blue-600 font-bold">Cecilia Hendric</a>.</p>
+              Buyed Animonda <a href="#" class="custom-Text-Color font-bold">24 x 200 g Carny Adult</a>.</p>
               <p class="text-xs text-gray-500">1 hour ago</p>
             </div>
           </div>
 
           <div class="flex items-center w-full my-6 -ml-1.5">
             <div class="w-1/12 z-10">
-              <div class="w-3.5 h-3.5 bg-blue-600 rounded-full"></div>
+              <div class="w-3.5 h-3.5 custom-Color rounded-full"></div>
             </div>
             <div class="w-11/12">
-              <p class="text-sm">New order received <a href="#" class="text-blue-600 font-bold">#OR9653</a>.</p>
+              <p class="text-sm">New order received <a href="#" class="custom-Text-Color font-bold">#OR9653</a>.</p>
               <p class="text-xs text-gray-500">2 hours ago</p>
             </div>
           </div>
 
           <div class="flex items-center w-full my-6 -ml-1.5">
             <div class="w-1/12 z-10">
-              <div class="w-3.5 h-3.5 bg-blue-600 rounded-full"></div>
+              <div class="w-3.5 h-3.5 custom-Color rounded-full"></div>
             </div>
             <div class="w-11/12">
               <p class="text-sm">
-                Message received from <a href="#" class="text-blue-600 font-bold">Jane Stillman</a>.</p>
+              Buyed Animonda <a href="#" class="custom-Text-Color font-bold">24 x 200 g Carny Adult</a>.</p>
               <p class="text-xs text-gray-500">2 hours ago</p>
             </div>
           </div>

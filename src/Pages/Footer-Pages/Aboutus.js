@@ -7,11 +7,10 @@ const Aboutus = () => {
                 <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
                     <div class="px-4 mb-10 md:text-center md:mb-20">
                         <p class="mb-2 text-lg font-semibold text-blue-500 dark:text-gray-400">
-                            About Us
+                            About Paws & Platters
                         </p>
                         <h2 class="pb-2 text-2xl font-bold text-gray-800 md:text-4xl dark:text-gray-300">
-                            What we do
-                        </h2>
+                            What we do                        </h2>
                         <div class="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">
                             <div class="flex-1 h-2 custom-Color-200">
                             </div>
@@ -24,12 +23,11 @@ const Aboutus = () => {
                     <div class="flex flex-wrap items-center">
                         <div class="w-full px-4 mb-10 md:w-1/2 lg:mb-0 ">
                             <h2 class="mb-4 text-2xl font-bold ">
-                                We are providing a better facility
+                            Our Mission
                             </h2>
                             <p class="mb-4 text-base leading-7 text-gray-500 dark:text-gray-400">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam
+                                Welcome to Paws & Platters – where a love for pets meets a passion for providing wholesome nutrition and promoting pet adoption. Our journey began with a simple yet profound belief: every pet deserves a happy, healthy life filled with love and proper care.
+
                             </p>
                             <ul class="mb-10">
                                 <li class="flex items-center mb-4 text-base ">
@@ -40,7 +38,7 @@ const Aboutus = () => {
                                                 d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                                         </svg>
                                     </span>
-                                    Art and Programs
+                                    Premium Pet Nutrition
                                 </li>
                                 <li class="flex items-center mb-4 text-base">
                                     <span class="mr-3 custom-Nav-Color ">
@@ -50,7 +48,7 @@ const Aboutus = () => {
                                                 d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                                         </svg>
                                     </span>
-                                    Value for money
+                                    Supporting Pet Adoption
                                 </li>
                                 <li class="flex items-center mb-4 text-base ">
                                     <span class="mr-3 custom-Nav-Color">
@@ -60,7 +58,7 @@ const Aboutus = () => {
                                                 d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                                         </svg>
                                     </span>
-                                    Support Team
+                                    Our Commitment to You
                                 </li>
                                 <li class="flex items-center mb-4 text-base ">
                                     <span class="mr-3 custom-Nav-Color  ">
@@ -70,8 +68,8 @@ const Aboutus = () => {
                                                 d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                                         </svg>
                                     </span>
-                                    Successful Growth for business
-                                </li>
+                                    Become a part of the Paws & Platters family
+                                                                    </li>
                             </ul>
                             <a href="#"
                                 class="p-3 text-white custom-Color rounded ">
@@ -79,7 +77,7 @@ const Aboutus = () => {
                             </a>
                         </div>
                         <div class="relative w-full px-4 mb-10 md:w-1/2 lg:mb-0">
-                            <img src="https://i.postimg.cc/HsSPvTq8/pexels-fauxels-3184357.jpg" alt=""
+                            <img src="https://as2.ftcdn.net/v2/jpg/05/78/20/71/1000_F_578207124_wKAoLVjDEzzuMZHLSxltp2czOqtrWaNv.jpg" alt=""
                                 class="relative  object-cover w-full rounded-md md:h-96 h-44" />
                             <div class="absolute top-0 right-0 items-center custom-Nav-Color justify-center hidden -z-10 -mt-16 lg:inline-flex">
                                 <svg width="290" height="166" fill=" custom-Nav-Color" xmlns="http://www.w3.org/2000/svg">

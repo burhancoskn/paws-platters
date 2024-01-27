@@ -1,9 +1,7 @@
-// DetailPage.js
-
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import { MdOutlineFavorite } from 'react-icons/md'
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import React, { useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { MdOutlineFavorite } from 'react-icons/md';
+import { BsFillCartFill } from 'react-icons/bs'
 
 const DetailPage = ({ items }) => {
     const { itemId } = useParams();
@@ -50,25 +48,28 @@ const DetailPage = ({ items }) => {
                                 </div>
                             </div>
                             <div class="flex">
-                            <span class="  pl-2 text-price text-2xl font-medium me-2 px-2.5 py-0.5 rounded  dark:text-yellow-400 border border-yellow-300 ">€ {price} </span>  
-                            <button 
-                            class="flex  ml-auto text-white custom-Color border-0 py-2 px-6 focus:outline-none border-yellow-600 rounded">Add Cart</button>
+                                <span class="  pl-2 text-price text-2xl font-medium me-2 px-2.5 py-0.5 rounded  dark:text-yellow-400 border border-yellow-300 ">€ {price} </span>
+                                <button
+                                    class="flex  ml-auto text-white custom-Color border-0 py-2 px-6 focus:outline-none text-center justify-center border-yellow-600 rounded">
+                                    <BsFillCartFill size={20} />
+                                    <span className='px-1 hidden lg:flex items-center  rounded-full p-1 text-[11px]'> Add Cart </span>
+                                    </button>
 
                                 <button class="rounded-full w-10 h-10 bg-gray-200 p-0 border inline-flex items-center text-center justify-center custom-Text-Color ml-4">
                                     <MdOutlineFavorite size={25} className=' custom-Nav-Color  rounded-none' />
                                 </button>
                             </div>
                         </div>
-                        <Link to={`/shop`}  class="w-full my-4 flex items-center justify-end w-1/2 px-5 py-2 text-sm text-white transition-colors duration-200 custom-Color border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
-                    <svg class="w-5 h-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-                    </svg>
-                    <span>Go back</span>
-                </Link>
+                        <Link to={`/shop`} class="w-full my-4 flex items-center justify-end w-1/2 px-5 py-2 text-sm text-white transition-colors duration-200 custom-Color border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
+                            <svg class="w-5 h-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                            </svg>
+                            <span>Go back</span>
+                        </Link>
                     </div>
-                    
+
                 </div>
-               
+
             </section>
         </div>
     );

@@ -15,11 +15,11 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Account from './Pages/Sidebar-Pages/Account';
 import Favorite from './Pages/Sidebar-Pages/Favorite';
 import Aboutus from './Pages/Footer-Pages/Aboutus';
-import Cart from './Pages/Sidebar-Pages/Cart';
+import { CartProvider } from './Pages/Sidebar-Pages/CartContext';
 import Faq from './Pages/Footer-Pages/Faq';
 import CategoriesAdapt from './components/CategoriesAdapt';
 import DetailPage from './components/DetailPage'; // Import the new DetailPage component
-
+import Cart from'./Pages/Sidebar-Pages/Cart';
 
 const allCategories = ['Show All', ...new Set(items.map((item) => item.category))];
 function App() {
@@ -37,74 +37,76 @@ function App() {
     }
   };
 
-  const [cartItems, setCartItems] = useState([]);
 
-  const addToCart = (item) => {
-    setCartItems([...cartItems, item]);
-  };
   return (
     <Router>
-      <div className="Container">
-        <TopNav />
-        <div className='Content'>
-          <Switch>
-            <Route exact path='/'>
-              <Home />
+      <CartProvider>
+
+        <div className="Container">
+          <TopNav />
+
+          <div className='Content'>
+            <Switch>
+              <Route exact path='/'>
+                <Home />
+              </Route>
+
+              <Route path='/login'>
+
+                <Login />
+
+              </Route>
+              <Route path='/profile'>
+
+                <Account />
+
+              </Route>
+              <Route path='/about'>
+
+                <Aboutus />
+
+              </Route>
+
+
+              <Route path='/faq'>
+
+                <Faq />
+
+              </Route>
+              <Route path='/addproduct'>
+
+                <AddProduct />
+
+              </Route>
+              <Route path='/fav'>
+
+                <Favorite />
+
+              </Route>
+              <Route path='/shop'>
+                <Categories filterItems={filterItems} categories={categories} />
+              </Route>
+
+              <Route path='/adopt'>
+
+                <CategoriesAdapt items={adaptItems} />
+
+              </Route>
+              <Route path="/cart">
+              <Cart />
             </Route>
+              <Route path='/detail/:itemId'>
+                <DetailPage items={items} />
+              </Route>
+            </Switch>
 
-            <Route path='/login'>
-
-              <Login />
-
-            </Route>
-            <Route path='/profile'>
-
-              <Account />
-
-            </Route>
-            <Route path='/about'>
-
-              <Aboutus />
-
-            </Route>
-
-            <Route path="/cart">
-              <Cart cartItems={cartItems} />
-            </Route>
-            <Route path='/faq'>
-
-              <Faq />
-
-            </Route>
-             <Route path='/addproduct'>
-
-              <AddProduct />
-
-            </Route>
-            <Route path='/fav'>
-
-              <Favorite />
-
-            </Route>
-            <Route path='/shop'>
-              <Categories filterItems={filterItems} categories={categories} />
-            </Route>
-
-            <Route path='/adopt'>
-
-              <CategoriesAdapt items={adaptItems} />
-
-            </Route>
-            <Route path='/detail/:itemId'>
-              <DetailPage items={items} />
-            </Route>
-          </Switch>
-
-          <footer>
-            <Footer />
-          </footer>
+            <footer>
+              <Footer />
+            </footer>
+          </div>
         </div>
-      </div>
+      </CartProvider>
+
     </Router>
 
 

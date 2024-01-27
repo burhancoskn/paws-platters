@@ -40,7 +40,7 @@ const Footer = () => {
                         <div>
                             <h6 className='font-medium text-center custom-Text-Color'> Quick Link </h6>
                             <ul className='text-black text-center'>
-                                <li className='py-2 text-sm'>About Us</li>
+                                <a href='/about' className='no-underline text-black'><li className='py-2 text-sm'>About Us</li></a>
                                 <li className='py-2 text-sm'>Privacy Policy</li>
                                 <li className='py-2 text-sm'>Terms of Service</li>
                                 <li className='py-2 text-sm'>Login info</li>

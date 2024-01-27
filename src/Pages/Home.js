@@ -141,7 +141,7 @@ const Home = ({ filterItems, categories }) => {
                                             <div class="grid-cols-1 py-4 ">
                                                 <div
                                                     class="mx-2 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                                                    <a href="#!">
+                                                    <a href="/shop">
                                                         <img
                                                             class="w-full rounded-t-lg h-80"
                                                             src={allCategoriesImg[index]}

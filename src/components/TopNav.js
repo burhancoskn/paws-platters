@@ -10,7 +10,6 @@ import Button from 'react-bootstrap/Button';
 
 import News from '../Pages/News'
 import Login from '../Pages/Login'
-import Cart from '../Pages/Sidebar-Pages/Cart'
 const TopNav = () => {
     const [sideNav, setSideNav] = useState(false)
     const [sideCart, setsideCart] = useState(false)
@@ -30,13 +29,16 @@ const TopNav = () => {
                 <img src='./images/web-logo.png' className='h-auto sm:w-36 max-w-lg rounded-lg' /></a>
                 <div className='hidden lg:flex items-center  rounded-full  text-[11px]'>
                     <nav>
-                        <ul className='flex flex-row my-0 text-gray-900'>
+                        <ul className='flex flex-row my-0 text-gray-900 font-semibold'>
                              <li className='text-xl px-2 custom-Text-Color flex'>
                                 <a href="/shop" class="text-neutral-600 hover:text-neutral-800 ">
                                     Shop</a>
                             </li>  <li className='text-xl px-2 custom-Text-Color flex'>
                                 <a href="/adopt" class="text-neutral-600 hover:text-neutral-800 ">
                                     Adoption</a>
+                            </li>  <li className='text-xl px-2 custom-Text-Color flex'>
+                                <a href="/about" class="text-neutral-600 hover:text-neutral-800 ">
+                                    About US</a>
                             </li>  <li className='text-xl px-2 custom-Text-Color flex'>
                                 <a href="/faq" class="text-neutral-600 hover:text-neutral-800 ">
                                     FAQ</a>
@@ -55,7 +57,7 @@ const TopNav = () => {
             <div className=' lg:flex items-center  rounded-full p-1 text-[11px]'>
                 <div class="relative inline-flex w-fit">
 
-                    <button onClick={() => setsideCart(!sideCart)} class="custom-Color m-2 inline-block rounded  border-0  md:flex items-center py-2 rounded-full text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
+                    <button class="custom-Color m-2 inline-block rounded  border-0  md:flex items-center py-2 rounded-full text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
                         <BsFillCartFill size={14} />
                         <span className='px-1 hidden lg:flex items-center  rounded-full p-1 text-[11px]'>Cart </span>
                     </button>
@@ -121,7 +123,7 @@ const TopNav = () => {
                             <FaCat size={25} className='mr-4 custom-Nav-Color  rounded-none' />
                             <a href="/adopt" class="text-neutral-600 hover:text-neutral-800 no-underline">
 
-                            Adapt a Pet</a>
+                            Adopt a Friend</a>
                         </li> <li className='text-xl py-4 flex'>
                             <FaShoppingBasket  size={25} className='mr-4 custom-Nav-Color  rounded-none' />
                             <a href="/shop" class="text-neutral-600 hover:text-neutral-800 no-underline">
